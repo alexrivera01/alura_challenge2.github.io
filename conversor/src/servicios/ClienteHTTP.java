@@ -21,7 +21,6 @@ public class ClienteHTTP {
         try{
             HttpResponse<String> response = cliente.send(request, HttpResponse.BodyHandlers.ofString());
 
-            System.out.println(response.statusCode());
             jsonResponse = response.body();
 
         }catch (IOException e){
